@@ -36,7 +36,7 @@ namespace RenamingApp
         {
             _filesIn.Clear();
             listViewDisplay.Items.Clear();
-            using (var open = new OpenFileDialog() {ValidateNames = true, Multiselect = true, Title = "Select Files" })
+            using (var open = new OpenFileDialog() { ValidateNames = true, Multiselect = true, Title = "Select Files" })
             {
                 if (open.ShowDialog() != DialogResult.OK) return;
                 foreach (var files in open.FileNames)

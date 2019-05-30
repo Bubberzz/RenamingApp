@@ -19,6 +19,7 @@ namespace RenamingApp
             return renamedList;
         }
 
+        // Changes file's extension to the string variable 'extension' passed in from the form's UI
         private static IEnumerable<string> RenameFiles(FileInfo[] info, string extension)
         {
             var filesOut = new List<string>();
@@ -33,8 +34,7 @@ namespace RenamingApp
                     // Adds changed name and file directory to filesOut list
                     filesOut.Add(result);
                 }
-                //Catches file exceptions i.e. if '&' doesn't exist in string
-                catch (Exception ex)
+                catch (Exception)
                 {
                     filesOut.Add(f.FullName);
                     continue;

@@ -22,6 +22,7 @@ namespace RenamingApp
             return renamedList;
         }
 
+        // Adds prefix string in front of the file name 
         private static IEnumerable<string> RenameFiles(FileInfo[] info, string prefix)
         {
             var filesOut = new List<string>();

@@ -20,7 +20,7 @@ namespace RenamingApp
             return renamedList;
         }
 
-        // Removes file name text starting from a character passed in from the forms text box
+        // Removes file name text starting from a character passed in from the form's text box
         private static IEnumerable<string> RenameFiles(FileInfo[] info, string removeText, int instance)
         {
             var filesOut = new List<string>();
